@@ -1,0 +1,111 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.form-group > * {
+  margin-bottom: 5px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+
+input {
+  padding: 0 5px;
+  /* border-radius: 5px; */
+  transition: .3s;
+}
+
+input, .remove-point-button {
+  background: #fff;
+  box-sizing: border-box;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3c93e9;
+}
+
+.transit-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.remove-point-button {
+  width: 30px;
+  border-left: none;
+  /* border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; */
+  cursor: pointer;
+}
+
+
+
+.add__point-button {
+  color: #3c93e9;
+}
+
+button.calculate-button {
+  background: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button.calculate-button:hover {
+  background: #206AB6;
+  color: #fff !important;
+}
+
+#map_form {
+  margin-bottom: 20px;
+}
+
+#transit-point {
+  display: none;
+}
+
+.results-list, .results-list__item {
+  margin: 10px;
+}
+
+#map, #google_map {
+  width: 70% !important;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  #map, #google_map {
+    height: 27vw !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #map, #google_map {
+    height: 50vw !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #result-calculate {
+    margin-bottom: 60px;
+    /* margin-bottom: 190px; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #result-calculate {
+    margin-bottom: 50px;
+  }
+}
