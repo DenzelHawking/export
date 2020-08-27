@@ -28,10 +28,7 @@
 <div class="president">
   <div class="president__inner">
     <div class="president__img"></div>
-    <div class="president__description">В ближайшем будущем государственная политика в сферах торговли и услуг
-      должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации
-      экспортоориентированного производства и упрощение торговых процедур.
-    </div>
+    <div class="president__description"><?php echo $presidengText ?></div>
   </div>
   <a href="<?php echo $presidentLink ?>" target="_blank" class="president__link">www.prezident.tj</a target="_blank">
 </div>

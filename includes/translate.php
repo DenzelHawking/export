@@ -31,7 +31,8 @@ $translate = [
     'fax' => 'Факс',
     'exchangeRate' => 'Курс валют',
     'siteTitle' => 'Агентство по экспорту при Правительстве Республики Таджикистан',
-    'weeks' => '<td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td>'
+    'weeks' => '<td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td>',
+    'presidengText' => 'В ближайшем будущем государственная политика в сферах торговли и услуг должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации экспортоориентированного производства и упрощение торговых процедур. <b>(Послание - 26.12.2019)</b>'
   ],
   'en' => [
     'main' => 'Main',
@@ -64,7 +65,8 @@ $translate = [
     'fax' => 'Fax',
     'exchangeRate' => 'Exchange rate',
     'siteTitle' => 'Export for agency under the Government of the Republic of Tajikistan',
-    'weeks' => '<td>Mo</td><td>Tu</td><td>We</td><td>Th</td><td>Fr</td><td>Sa</td><td>Su</td>'
+    'weeks' => '<td>Mo</td><td>Tu</td><td>We</td><td>Th</td><td>Fr</td><td>Sa</td><td>Su</td>',
+    'presidengText' => 'В ближайшем будущем государственная политика в сферах торговли и услуг должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации экспортоориентированного производства и упрощение торговых процедур. <b>(Послание - 26.12.2019)</b>'
   ],
   'tj' => [
     'main' => 'Асосӣ',
@@ -97,7 +99,8 @@ $translate = [
     'fax' => 'Факс',
     'exchangeRate' => 'Қурби асъор',
     'siteTitle' => 'Агентии содиротии назди Ҳукумати Ҷумҳурии Тоҷикистон',
-    'weeks' => '<td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td>'
+    'weeks' => '<td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td>',
+    'presidengText' => 'Сиёсати давлат дар соҳаҳои савдо ва хизматрасонӣ дар ояндаи наздик бояд ба се самти асосӣ - ҳавасмандгардонии содирот, таъмин намудани гуногуншаклии истеҳсолоти ба содирот нигаронидашуда ва соддагардонии расмиёти савдо равона гардад. <b>(Паём - 26.12.2019)</b>'
   ]
 ];
 
@@ -133,5 +136,7 @@ $fax = $translate[$currentLang]['fax'];
 $exchangeRate = $translate[$currentLang]['exchangeRate'];
 $siteTitle = $translate[$currentLang]['siteTitle'];
 $weeks = $translate[$currentLang]['weeks'];
+
+$presidengText = $translate[$currentLang]['presidengText'];
 
 ?>

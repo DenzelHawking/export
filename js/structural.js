@@ -3,6 +3,20 @@ let newsItem = document.querySelectorAll('.news-item');
 let visibleHeight = newsText[0].clientHeight;
 let showAllText = document.querySelectorAll('.show-hide-description');
 
+let buttonOpenedText;
+let buttonCutText;
+
+if (document.querySelector('html').lang == 'ru') {
+    buttonOpenedText = 'Скрыть';
+    buttonCutText = 'Показать все';
+  } else if (document.querySelector('html').lang == 'en') {
+    buttonOpenedText = 'Hide';
+    buttonCutText = 'Show All';
+  } else {
+    buttonOpenedText = 'Скрыть';
+    buttonCutText = 'Показать все';
+  }
+
 for (let i = 0; i < newsText.length; i++) {
     let visibleHeight = newsText[i].clientHeight;
     let fullHeight = newsText[i].scrollHeight;
@@ -18,12 +32,12 @@ showAllText.forEach((elem, index) => {
             newsText[index].style.height = `${visibleHeight}px`;
             newsText[index].classList.add('hide-text');
             elem.classList.remove('openned');
-            elem.innerHTML = 'Показать все';
+            elem.innerHTML = buttonCutText;
         } else {
             newsText[index].style.height = `${newsText[index].scrollHeight}px`;
             newsText[index].classList.remove('hide-text');
             elem.classList.add('openned');
-            elem.innerHTML = 'Скрыть';
+            elem.innerHTML = buttonOpenedText;
         };
     };
 });

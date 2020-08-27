@@ -2,7 +2,7 @@
 $menuList = [
   'main' => [
     'title' => $main,
-    'link' => '/'
+    'link' => "./?lang=$currentLang"
   ],
   'news' => [
     'title' => $news,

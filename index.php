@@ -70,7 +70,7 @@
 
     <div id="header">
       <div class="header__top">
-        <a href=<?php echo "./?lang=$currentLang" ?>>
+        <a href=<?php echo './?lang=' . $currentLang ?>>
           <div id="logo"></div>
         </a>
 
