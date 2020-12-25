@@ -1,40 +1,40 @@
 <?php
-  $page = $_GET['page'];
-  $lang = $_GET['lang'];
+$page = $_GET['page'];
+$lang = $_GET['lang'];
 
-  $defaultPage = './pages/main.php';
-  $defaultLang = 'ru';
+$defaultPage = './pages/main.php';
+$defaultLang = 'ru';
 
-  $pages = [
-    'about' => './pages/about-agency.php',
-    'contacts' => './pages/contacts.php',
-    'gallery' => './pages/gallery.php',
-    'guide' => './pages/guide.php',
-    'news' => './pages/news.php',
-    'partners' => './pages/partners.php',
-    'reglament' => './pages/reglament.php',
-    'services' => './pages/services.php',
-    'structural-tasks' => './pages/structural-tasks.php',
-    'structure' => './pages/structure.php'
-  ];
+$pages = array(
+  'about' => './pages/about-agency.php',
+  'contacts' => './pages/contacts.php',
+  'gallery' => './pages/gallery.php',
+  'guide' => './pages/guide.php',
+  'news' => './pages/news.php',
+  'partners' => './pages/partners.php',
+  'reglament' => './pages/reglament.php',
+  'services' => './pages/services.php',
+  'structural-tasks' => './pages/structural-tasks.php',
+  'structure' => './pages/structure.php'
+);
 
 
+$currentPage = $defaultPage;
+$currentLang = $defaultLang;
+
+if ($page) {
+  $currentPage = $pages[$page];
+} else {
   $currentPage = $defaultPage;
+};
+
+if ($lang) {
+  $currentLang = $lang;
+} else {
   $currentLang = $defaultLang;
+};
 
-  if ($page) {
-    $currentPage = $pages[$page];
-  } else {
-    $currentPage = $defaultPage;
-  };
-
-  if ($lang) {
-    $currentLang = $lang;
-  } else {
-    $currentLang = $defaultLang;
-  };
-
-  include './includes/translate.php';
+include './includes/translate.php';
 ?>
 
 
@@ -57,20 +57,23 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/map.css">
 
-  <link rel="shortcut icon" href="images/logo_1.png">
+  <link rel="shortcut icon" href="images/logos/shortcut_logo.png">
 </head>
 
 <body>
   <div class="popup-pdf">
-    <div class="close-btn"><div class="close-btn_line close-btn_line-1"></div><div class="close-btn_line close-btn_line-2"></div></div>
+    <div class="close-btn">
+      <div class="close-btn_line close-btn_line-1"></div>
+      <div class="close-btn_line close-btn_line-2"></div>
+    </div>
     <div class="pdf-list"></div>
   </div>
 
-  <div id="wrapper">
+  <div id="wrapper" class=<?php echo $currentLang ?>>
 
     <div id="header">
       <div class="header__top">
-        <a href=<?php echo './?lang=' . $currentLang ?>>
+        <a href=<?php echo './?lang=' . $currentLang ?> class=<?php echo $currentLang ?>>
           <div id="logo"></div>
         </a>
 
@@ -94,16 +97,16 @@
           <li class="top-menu-item"><?php echo $contacts ?></li>
         </a>
         <li class="top-menu-item toggle-language">
-          <span><?php echo $langText ?></span>
+          <!-- <span><?php echo $langText ?></span> -->
           <ul class="toggle-language__list">
             <a href=<?php echo './?page=' . $page . '&lang=tj' ?>>
-              <li class="toggle-language__item">Тоҷикӣ</li>
+              <li class="toggle-language__item toggle-language__item_tj"></li>
             </a>
             <a href=<?php echo './?page=' . $page . '&lang=ru' ?>>
-              <li class="toggle-language__item">Русский</li>
+              <li class="toggle-language__item toggle-language__item_ru"></li>
             </a>
             <a href=<?php echo './?page=' . $page . '&lang=en' ?>>
-              <li class="toggle-language__item">English</li>
+              <li class="toggle-language__item toggle-language__item_en"></li>
             </a>
           </ul>
         </li>
@@ -150,7 +153,7 @@
           <tbody></tbody>
         </table>
 
-        <div id="contacts">
+        <!-- <div id="contacts">
           <ul class="list contacts__list">
             <div class="list__title contacts__title"><?php echo $contacts ?></div>
             <li>
@@ -170,7 +173,7 @@
               <div>(44)7014045</div>
             </li>
           </ul>
-        </div>
+        </div> -->
 
 
         <div id="valute">
@@ -197,11 +200,34 @@
         <!-- pages -->
         <?php include $currentPage ?>
 
-
       </div>
     </div>
 
     <div id="footer">
+      <div id="contacts">
+        <ul class="list contacts__list">
+          <div class="list__title contacts__title"><?php echo $contacts ?></div>
+          <li>
+            <div class="list__name">E-mail:</div>
+            <div>info@export.tj</div>
+          </li>
+          <li>
+            <div class="list__name"><?php echo $phone ?>:</div>
+            <div>2217003 (<?php echo $reception ?>)</div>
+            <div>(44)7011616 (<?php echo $commonDepartment ?>)</div>
+          </li>
+          <li>
+            <div class="list__name"><?php echo $fax ?>:</div>
+            <div>(44)7014045</div>
+          </li>
+
+          <li>
+            <div class="list__name"><?php echo $address ?>:</div>
+            <div>Мирзо Турсунзода 23</div>
+          </li>
+        </ul>
+      </div>
+
       <div class="footer__text"><?php echo $siteTitle ?></div>
     </div>
 

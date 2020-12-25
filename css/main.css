@@ -1,14 +1,16 @@
+/* 1200 | 992 | 767 | 550 */
+
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
 body {
-  margin: 0;
-  padding: 0 5vw;
   background: #ccc;
   font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0 5vw;
 }
 
 #wrapper {
-  box-shadow: 0 0 5px
+  box-shadow: 0 0 5px;
 }
 
 a {
@@ -17,10 +19,12 @@ a {
   text-transform: inherit;
 }
 
+.right-part__main-tab {
+  margin-left: 10px;
+}
 
 .president {
   width: 250px;
-  margin-left: 10px;
 }
 
 .president__inner {
@@ -29,17 +33,17 @@ a {
 
 .president__img {
   height: 200px;
-  margin: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
   background: url(../images/president.jpg) 0 0 no-repeat;
   background-size: cover;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
 }
 
 .president__description {
-  text-align: center;
-  color: #fff;
   background: #206ab6;
+  color: #fff;
+  text-align: center;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -51,32 +55,78 @@ a {
 }
 
 .president__link {
-  border: 1px solid #ccc;
   display: block;
   width: 100%;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  box-sizing: border-box;
+  border: 1px solid #ccc;
   margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.main__inner {
+  display: flex;
+}
+
+.wiget__main {
+  position: relative;
+  width: 250px;
+  height: 120px;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.wiget__main-0 {
+  margin-top: 50px;
+}
+
+.wiget__main_img {
+  width: 100%;
+  height: 70px;
+}
+
+.wiget__main-0 .wiget__main_img {
+  background: url(../images/wigets/Glavnaya/tajikistan.jpg) center no-repeat;
+  background-size: contain;
+}
+
+.wiget__main-1 .wiget__main_img {
+  background: url(../images/wigets/Glavnaya/tajtrade-tg_medium.png) center no-repeat;
+  background-size: 80%;
+}
+
+.wiget__main_text {
+  display: flex;
+  height: 50px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+}
+
+.wiget__main_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
-
-
 .popup-pdf {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 510px;
+  max-height: 80vh;
   background: #fff;
-  z-index: 999;
   padding: 30px;
   box-sizing: border-box;
-  display: none;
   box-shadow: 0 0 7px #000;
-  max-height: 80vh;
-  max-width: 510px;
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
 .pdf-list {
@@ -91,23 +141,23 @@ a {
 
 .close-btn {
   position: absolute;
-  width: 20px;
-  height: 20px;
   top: 10px;
   right: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
+  width: 20px;
+  height: 20px;
   background: url(../images/cross.png) center no-repeat;
   background-size: 90%;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .pdf-item {
-  font-size: 11px;
-  margin: 5px;
-  box-sizing: border-box;
   display: inline-block;
   position: relative;
+  font-size: 11px;
   text-transform: uppercase;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
 .pdf-img {
@@ -118,44 +168,101 @@ a {
 }
 
 .pdf-title {
-  font-family: arial;
   position: absolute;
   top: 65px;
   left: 5px;
   width: 120px;
-  word-break: break-word;
   color: #fff;
+  font-family: arial;
+  word-break: break-word;
   text-shadow: 2px 1px 2px #000;
 }
 
+@media screen and (max-width: 767px) {
+  .right-part__main-tab {
+    margin-top: 50px;
+  }
 
-@media screen and (min-width: 767px) {
-  .president {
-    float: right;
+  .president,
+  .main__inner {
+    margin: auto !important;
+  }
+
+  .main__inner {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 550px) {
-  .president {
-    margin: auto;
-  }
-}
 
 @media screen and (max-width: 350px) {
-  .president {
+
+  .president,
+  .wiget__main {
     width: 200px;
   }
 
   .president__img {
     height: 170px;
   }
+
+  .wiget__main {
+    font-size: 11px;
+  }
 }
 
 
+.wigets-slider {
+  width: 100%;
+  height: 70px;
+  margin-top: 50px;
+  overflow: hidden;
+}
 
-/*
-1200
-992
-767
-550
-*/
+
+.wigets-slider__inner {
+  width: 5000%;
+  height: 100%;
+  transition: .5s;
+}
+
+.wigets-slider__item {
+  float: left;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  margin: 0 5px;
+  background-repeat: no-repeat;
+}
+
+.wigets-slider__item-0 {
+  background-image: url(../images/wigets/baner-1.png);
+}
+
+.wigets-slider__item-1 {
+  background-image: url(../images/wigets/baner-2.png);
+}
+
+.wigets-slider__item-2 {
+  background-image: url(../images/wigets/baner-3.png);
+}
+
+.wigets-slider__item-3 {
+  background-image: url(../images/wigets/baner-4.png);
+}
+
+.wigets-slider__item-4 {
+  background-image: url(../images/wigets/baner-5.jpg);
+}
+
+.wigets-slider__item-5 {
+  background-image: url(../images/wigets/baner-6.png);
+}
+
+.wigets-slider__item-6 {
+  background-image: url(../images/wigets/baner-7.png);
+}
+
+.wigets-slider__item-7 {
+  background-image: url(../images/wigets/baner-8.png);
+}

@@ -1,72 +1,72 @@
 <?php
-$leaders = [
-  'ru' => [
-    [
+$leaders = array(
+  'ru' => array(
+    array(
       'leaderImg' => 'bobozoda.jpg',
       'leaderPosition' => 'ДИРЕКТОР',
       'leaderName' => 'ШАВКАТ БОБОЗОДА',
       'leaderDesc' => 'ДИРЕКТОР АГЕНТСТВА ЭКСПОРТА ПРИ ПРАВИТЕЛЬСТВЕ РЕСПУБЛИКИ ТАДЖИКИСТАН',
       'guideShowAllBtn' => 'Показать все'
-    ],
-    [
+    ),
+    array(
       'leaderImg' => 'bakhtiyor.jpg',
       'leaderPosition' => 'МУОВИНИ ЯКУМ',
       'leaderName' => 'АЗИРМАДЗОДА Бахтиёр.',
       'leaderDesc' => 'ПЕРВЫЙ ЗАМЕСТИТЕЛЬ ДИРЕКТОРА АГЕНТСТВА ЭКСПОРТА ПРИ ПРАВИТЕЛЬСТВЕ РЕСПУБЛИКИ ТАДЖИКИСТАН',
       'guideShowAllBtn' => 'Показать все'
-    ],
-    [
+    ),
+    array(
       'leaderImg' => 'bakhodur.jpg',
       'leaderPosition' => 'МУОВИН',
       'leaderName' => 'РАХИМЗОДА Баходур Карим',
       'guideShowAllBtn' => 'Показать все'
-    ]
-  ],
-  'en' => [
-    [
+    )
+  ),
+  'en' => array(
+    array(
       'leaderImg' => 'bobozoda.jpg',
       'leaderPosition' => 'DIRECTOR',
       'leaderName' => 'SHAVKAT BOBOZOD',
       'leaderDesc' => 'DIRECTOR OF EXPORT AGENCY UNDER THE GOVERNMENT OF THE REPUBLIC OF TAJIKISTAN',
       'guideShowAllBtn' => 'Show All'
-    ],
-    [
+    ),
+    array(
       'leaderImg' => 'bakhtiyor.jpg',
       'leaderPosition' => 'МУОВИНИ ЯКУМ',
       'leaderName' => 'AZIRMADZODA Bakhtiyor.',
       'leaderDesc' => 'FIRST DEPUTY DIRECTOR OF EXPORT AGENCY UNDER THE GOVERNMENT OF THE REPUBLIC OF TAJIKISTAN',
       'guideShowAllBtn' => 'Show All'
-    ],
-    [
+    ),
+    array(
       'leaderImg' => 'bakhodur.jpg',
       'leaderPosition' => 'МУОВИН',
       'leaderName' => 'RAHIMZODA Bahodur Karim',
       'guideShowAllBtn' => 'Show All'
-    ]
-  ],
-  'tj' => [
-    [
+    )
+  ),
+  'tj' => array(
+    array(
       'leaderImg' => 'bobozoda.jpg',
       'leaderPosition' => 'ДИРЕКТОР',
       'leaderName' => 'ШАВКАТ БОБОЗОДА',
       'leaderDesc' => 'ДИРЕКТОРИ АГЕНТИИ СОДИРОТИ НАЗДИ ҲУКУМАТИ ҶУМҲУРИИ ТОҶИКИСТОН',
       'guideShowAllBtn' => 'Показать все'
-    ],
-    [
+    ),
+    array(
       'leaderImg' => 'bakhtiyor.jpg',
       'leaderPosition' => 'МУОВИНИ ЯКУМ',
       'leaderName' => 'АЗИРМАДЗОДА Бахтиёр.',
       'leaderDesc' => 'МУОВИНИ ЯКУМИ ДИРЕКТОРИ АГЕНТИИ СОДИРОТИ НАЗДИ ҲУКУМАТИ ҶУМҲУРИИ ТОҶИКИСТОН',
       'guideShowAllBtn' => 'Показать все'
-    ],
-    [
+    ),
+    array(
       'leaderImg' => 'bakhodur.jpg',
       'leaderPosition' => 'МУОВИН',
       'leaderName' => 'РАХИМЗОДА Баходур Карим',
       'guideShowAllBtn' => 'Показать все'
-    ]
-  ]
-];
+    )
+  )
+);
 
 
 for ($i = 0; $i < count($leaders[$currentLang]); $i++) {
@@ -85,7 +85,7 @@ for ($i = 0; $i < count($leaders[$currentLang]); $i++) {
           <div class='news-description'>
             <div class='news-text'>
               <p>
-                <img src='../images/$leaderImg'>
+                <img src='../images/leaders/$leaderImg'>
 
                 <div>
                   <h2>$leaderPosition</h2>

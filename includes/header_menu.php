@@ -1,70 +1,78 @@
 <?php
-$menuList = [
-  'main' => [
+$menuList = array(
+  'main' => array(
     'title' => $main,
     'link' => "./?lang=$currentLang"
-  ],
-  'news' => [
+  ),
+  'news' => array(
     'title' => $news,
-    'subMenu' => [
-      [
+    'subMenu' => array(
+      array(
         'title' => $currentNews,
         'link' => "./?page=news&lang=$currentLang"
-      ]
-    ]
-  ],
-  'aboutAgency' => [
+      )
+    )
+  ),
+  'aboutAgency' => array(
     'title' => $aboutAgency,
-    'subMenu' => [
-      [
+    'subMenu' => array(
+      array(
         'title' => $leadership,
         'link' => "./?page=guide&lang=$currentLang"
-      ],
-      [
+      ),
+      array(
         'title' => $services,
         'link' => "./?page=services&lang=$currentLang"
-      ],
-      [
+      ),
+      array(
         'title' => $partners,
         'link' => "./?page=partners&lang=$currentLang"
-      ]
-    ]
-  ],
-  'logistics' => [
+      )
+    )
+  ),
+  'logistics' => array(
     'title' => $logistics,
-    'subMenu' => [
-      [
+    'subMenu' => array(
+      array(
         'title' => $logisticsCompanies,
         'link' => "#"
-      ],
-      [
+      ),
+      array(
         'title' => $logisticPortal,
         'link' => "https://portal.aiatt.tj/home"
-      ]
-    ]
-  ],
-  'registers' => [
+      )
+    )
+  ),
+  'registers' => array(
     'title' => $registers,
-    'subMenu' => [
-      [
+    'subMenu' => array(
+      array(
         'title' => $ERAP,
         'download' => 'agriculture'
-      ],
-      [
+      ),
+      array(
         'title' => $EIPR,
         'download' => 'industry'
-      ]
-    ]
-  ],
-  'exportGuide' => [
+      )
+    )
+  ),
+  'exportGuide' => array(
     'title' => $exportGuide,
     'link' => '#'
-  ],
-  'NDS' => [
+  ),
+  'NDS' => array(
     'title' => $NDS,
     'download' => 'guide'
-  ]
-];
+  ),
+  'reglament' => array(
+    'title' => $reglament,
+    'link' => "./?page=reglament&lang=$currentLang"
+  ),
+  'GUP' => array(
+    'title' => $GUP,
+    'link' => "#"
+  )
+);
 
 echo '<ul class="header__menu">';
 
@@ -79,7 +87,7 @@ foreach ($menuList as $key => $value) {
     echo '<ul class="sub-list-menu">';
 
     for ($i = 0; $i < count($menuList[$key]['subMenu']); $i++) {
-      if($menuList[$key]['subMenu'][$i]['download']) {
+      if ($menuList[$key]['subMenu'][$i]['download']) {
         $subDownloadPDF = 'download-pdf';
         $subDownloadData = 'data-type="' . $menuList[$key]['subMenu'][$i]['download'] . '"';
       } else {
@@ -100,7 +108,7 @@ foreach ($menuList as $key => $value) {
     echo '</ul>';
   } else {
 
-    if($menuList[$key]['download']) {
+    if ($menuList[$key]['download']) {
       $downloadPDF = 'download-pdf';
     } else {
       $downloadPDF = '';
@@ -116,4 +124,3 @@ foreach ($menuList as $key => $value) {
 };
 
 echo '</ul>';
-?>

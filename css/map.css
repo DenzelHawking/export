@@ -1,10 +1,10 @@
 .form-group {
   display: flex;
-  flex-direction: column;
   margin: 20px 0;
+  flex-direction: column;
 }
 
-.form-group > * {
+.form-group>* {
   margin-bottom: 5px;
 }
 
@@ -16,16 +16,16 @@
 
 input {
   padding: 0 5px;
-  /* border-radius: 5px; */
   transition: .3s;
 }
 
-input, .remove-point-button {
-  background: #fff;
-  box-sizing: border-box;
+input,
+.remove-point-button {
   height: 30px;
+  background: #fff;
   border: none;
   border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
   outline: none;
 }
 
@@ -41,12 +41,8 @@ input:focus {
 .remove-point-button {
   width: 30px;
   border-left: none;
-  /* border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px; */
   cursor: pointer;
 }
-
-
 
 .add__point-button {
   color: #3c93e9;
@@ -55,11 +51,11 @@ input:focus {
 button.calculate-button {
   background: #fff;
   border: 1px solid #ccc;
-  box-sizing: border-box;
   padding: 10px 15px;
-  outline: none;
+  box-sizing: border-box;
   cursor: pointer;
   transition: .3s;
+  outline: none;
 }
 
 button.calculate-button:hover {
@@ -75,24 +71,28 @@ button.calculate-button:hover {
   display: none;
 }
 
-.results-list, .results-list__item {
+.results-list,
+.results-list__item {
   margin: 10px;
 }
 
-#map, #google_map {
-  width: 70% !important;
+#map,
+#google_map {
+  width: 100% !important;
   border: 1px solid #ccc;
   margin: auto;
 }
 
 @media screen and (min-width: 992px) {
-  #map, #google_map {
+  #map,
+  #google_map {
     height: 27vw !important;
   }
 }
 
 @media screen and (max-width: 992px) {
-  #map, #google_map {
+  #map,
+  #google_map {
     height: 50vw !important;
   }
 }
@@ -100,7 +100,6 @@ button.calculate-button:hover {
 @media screen and (min-width: 767px) {
   #result-calculate {
     margin-bottom: 60px;
-    /* margin-bottom: 190px; */
   }
 }
 

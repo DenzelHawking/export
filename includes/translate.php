@@ -1,10 +1,10 @@
-<?php 
-$translate = [
-  'ru' => [
+<?php
+$translate = array(
+  'ru' => array(
     'main' => 'Главная',
     'news' => 'Новости',
     'currentNews' => 'Текущие новости',
-    'aboutAgency' => 'Об агентстве',
+    'aboutAgency' => 'Об Агентстве',
     'leadership' => 'Руководство',
     'services' => 'Услуги',
     'partners' => 'Партнеры',
@@ -16,6 +16,8 @@ $translate = [
     'EIPR' => 'Реестры экспортируемой промышленной продукции',
     'exportGuide' => 'Путеводитель по экспорту',
     'NDS' => 'Национальная стратегия развития',
+    'reglament' => 'Структура',
+    'GUP' => 'ГУП',
     'regulations' => 'Нормативно правовые акты',
     'TPT' => 'Торговый портал Таджикистана',
     'sourcesInformation' => 'Источники информации по ВЭД',
@@ -26,15 +28,19 @@ $translate = [
     'activity' => 'Мероприятия',
     'contacts' => 'Контакты',
     'lang' => 'Русский',
+    'address' => 'Адрес',
+    'phone' => 'Телефон',
     'reception' => 'Приёмная',
     'commonDepartment' => 'Общий отдел',
     'fax' => 'Факс',
     'exchangeRate' => 'Курс валют',
     'siteTitle' => 'Агентство по экспорту при Правительстве Республики Таджикистан',
     'weeks' => '<td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td>',
-    'presidengText' => 'В ближайшем будущем государственная политика в сферах торговли и услуг должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации экспортоориентированного производства и упрощение торговых процедур. <b>(Послание - 26.12.2019)</b>'
-  ],
-  'en' => [
+    'presidengText' => 'В ближайшем будущем государственная политика в сферах торговли и услуг должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации экспортоориентированного производства и упрощение торговых процедур. <b>(Послание - 26.12.2019)</b>',
+    'travelPortal' => 'Национальный Туристический Портал Республики Таджикистан',
+    'tradePortal' => 'Торговый портал Таджикистана'
+  ),
+  'en' => array(
     'main' => 'Main',
     'news' => 'News',
     'currentNews' => 'Current news',
@@ -50,6 +56,8 @@ $translate = [
     'EIPR' => 'Exported industrial product registers',
     'exportGuide' => 'Export guide',
     'NDS' => 'National development strategy',
+    'reglament' => 'Structure',
+    'GUP' => 'ГУП',
     'regulations' => 'Regulations',
     'TPT' => 'Trade portal of Tajikistan',
     'sourcesInformation' => 'Sources information',
@@ -60,15 +68,19 @@ $translate = [
     'activity' => 'Activity',
     'contacts' => 'Сontacts',
     'lang' => 'English',
+    'address' => 'Address',
+    'phone' => 'Phone',
     'reception' => 'Reception',
     'commonDepartment' => 'Common department',
     'fax' => 'Fax',
-    'exchangeRate' => 'Exchange rate',
+    'exchangeRate' => 'Exchange Rates',
     'siteTitle' => 'Export for agency under the Government of the Republic of Tajikistan',
     'weeks' => '<td>Mo</td><td>Tu</td><td>We</td><td>Th</td><td>Fr</td><td>Sa</td><td>Su</td>',
-    'presidengText' => 'В ближайшем будущем государственная политика в сферах торговли и услуг должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации экспортоориентированного производства и упрощение торговых процедур. <b>(Послание - 26.12.2019)</b>'
-  ],
-  'tj' => [
+    'presidengText' => 'В ближайшем будущем государственная политика в сферах торговли и услуг должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации экспортоориентированного производства и упрощение торговых процедур. <b>(Послание - 26.12.2019)</b>',
+    'travelPortal' => 'Национальный Туристический Портал Республики Таджикистан',
+    'tradePortal' => 'Торговый портал Таджикистана'
+  ),
+  'tj' => array(
     'main' => 'Асосӣ',
     'news' => 'Хабарҳо',
     'currentNews' => 'Ахбори ҷорӣ',
@@ -84,6 +96,8 @@ $translate = [
     'EIPR' => 'Феҳристи саноатӣ',
     'exportGuide' => 'Роҳнамои содирот',
     'NDS' => 'Стратегияи миллии рушд',
+    'reglament' => 'Сохтор',
+    'GUP' => 'КВД',
     'regulations' => 'Санадҳои меъёрии ҳуқуқӣ',
     'TPT' => 'Портали савдои Тоҷикистон',
     'sourcesInformation' => 'Манбаъҳои иттилоот оид ба ФИХ',
@@ -94,15 +108,19 @@ $translate = [
     'activity' => 'Чорабиниҳо',
     'contacts' => 'Тамос',
     'lang' => 'Тоҷикӣ',
+    'address' => 'Адрес',
+    'phone' => 'Телефон',
     'reception' => 'Қабулгоҳ',
     'commonDepartment' => 'Шубаи умумӣ',
     'fax' => 'Факс',
     'exchangeRate' => 'Қурби асъор',
     'siteTitle' => 'Агентии содиротии назди Ҳукумати Ҷумҳурии Тоҷикистон',
     'weeks' => '<td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td>',
-    'presidengText' => 'Сиёсати давлат дар соҳаҳои савдо ва хизматрасонӣ дар ояндаи наздик бояд ба се самти асосӣ - ҳавасмандгардонии содирот, таъмин намудани гуногуншаклии истеҳсолоти ба содирот нигаронидашуда ва соддагардонии расмиёти савдо равона гардад. <b>(Паём - 26.12.2019)</b>'
-  ]
-];
+    'presidengText' => 'Сиёсати давлат дар соҳаҳои савдо ва хизматрасонӣ дар ояндаи наздик бояд ба се самти асосӣ - ҳавасмандгардонии содирот, таъмин намудани гуногуншаклии истеҳсолоти ба содирот нигаронидашуда ва соддагардонии расмиёти савдо равона гардад. <b>(Паём - 26.12.2019)</b>',
+    'travelPortal' => 'Торнамои миллии сайёҳии Ҷумҳурии Тоҷикистон',
+    'tradePortal' => 'Портали савдои Тоҷикистон'
+  )
+);
 
 $main = $translate[$currentLang]['main'];
 $news = $translate[$currentLang]['news'];
@@ -119,6 +137,8 @@ $ERAP = $translate[$currentLang]['ERAP'];
 $EIPR = $translate[$currentLang]['EIPR'];
 $exportGuide = $translate[$currentLang]['exportGuide'];
 $NDS = $translate[$currentLang]['NDS'];
+$reglament = $translate[$currentLang]['reglament'];
+$GUP = $translate[$currentLang]['GUP'];
 $regulations = $translate[$currentLang]['regulations'];
 $TPT = $translate[$currentLang]['TPT'];
 $sourcesInformation = $translate[$currentLang]['sourcesInformation'];
@@ -130,6 +150,8 @@ $activity = $translate[$currentLang]['activity'];
 $contacts = $translate[$currentLang]['contacts'];
 $langText = $translate[$currentLang]['lang'];
 
+$address = $translate[$currentLang]['address'];
+$phone = $translate[$currentLang]['phone'];
 $reception = $translate[$currentLang]['reception'];
 $commonDepartment = $translate[$currentLang]['commonDepartment'];
 $fax = $translate[$currentLang]['fax'];
@@ -139,4 +161,5 @@ $weeks = $translate[$currentLang]['weeks'];
 
 $presidengText = $translate[$currentLang]['presidengText'];
 
-?>
+$travelPortal = $translate[$currentLang]['travelPortal'];
+$tradePortal = $translate[$currentLang]['tradePortal'];
