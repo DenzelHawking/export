@@ -266,3 +266,22 @@ a {
 .wigets-slider__item-7 {
   background-image: url(../images/wigets/baner-8.png);
 }
+
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-item {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #206AB6;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 5px;
+}
