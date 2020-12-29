@@ -415,13 +415,13 @@ for ($i = $currentItem; $i <= $itemLength; $i++) {
 echo('<div class="pagination">');
 foreach ($getPagination as $value => $key) {
   if (is_array($key)) {
-    echo("<a class='pagination-item pagination-arrow' href=http://export/?page=news&lang=" . $currentLang . "&current_page=" . $key[0] . ">" . $key[1] . "</a>");
+    echo("<a class='pagination-item pagination-arrow' href='./?page=news&lang=" . $currentLang . "&current_page=" . $key[0] . "'>" . $key[1] . "</a>");
   }
   
   if ($key === $newsPage - 1 && is_numeric($key)) {
-    echo("<a class='pagination-item active' href=http://export/?page=news&lang=" . $currentLang . "&current_page=" . ($key + 1) . ">" . ($key + 1) . "</a>");
+    echo("<a class='pagination-item active' href='./?page=news&lang=" . $currentLang . "&current_page=" . ($key + 1) . "'>" . ($key + 1) . "</a>");
   } else if (is_numeric($key)) {
-    echo("<a class='pagination-item' href=http://export/?page=news&lang=" . $currentLang . "&current_page=" . ($key + 1) . ">" . ($key + 1) . "</a>");
+    echo("<a class='pagination-item' href='./?page=news&lang=" . $currentLang . "&current_page=" . ($key + 1) . "'>" . ($key + 1) . "</a>");
   }
 }
 echo('</div>');
