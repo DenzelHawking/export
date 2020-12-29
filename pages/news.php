@@ -340,13 +340,12 @@ $currentItem = ($newsPage - 1) * $itemOnPage;
 $itemLength = verifyItemsLength($currentItem + 4, $newsList[$currentLang]);
 
 function verifyItemsLength($number, $arrNews) {
-  if ($number > count($arrNews)) {
-    return count($arrNews);
+  if ($number >= count($arrNews) - 1) {
+    return count($arrNews) - 1;
   } else {
     return $number;
   }
 }
-
 
 function showPagesButton($pages, $currentPage) {
   $showPagesArray = array();
@@ -419,20 +418,11 @@ foreach ($getPagination as $value => $key) {
     echo("<a class='pagination-item pagination-arrow' href=http://export/?page=news&lang=" . $currentLang . "&current_page=" . $key[0] . ">" . $key[1] . "</a>");
   }
   
-  // echo $key;
-  // $newsPage
-
   if ($key === $newsPage - 1 && is_numeric($key)) {
     echo("<a class='pagination-item active' href=http://export/?page=news&lang=" . $currentLang . "&current_page=" . ($key + 1) . ">" . ($key + 1) . "</a>");
   } else if (is_numeric($key)) {
     echo("<a class='pagination-item' href=http://export/?page=news&lang=" . $currentLang . "&current_page=" . ($key + 1) . ">" . ($key + 1) . "</a>");
   }
-
-
-
-  // if (is_numeric($key)) {
-  //   echo("<a class='pagination-item' href=http://export/?page=news&lang=" . $currentLang . "&current_page=" . ($key + 1) . ">" . ($key + 1) . "</a>");
-  // }
 }
 echo('</div>');
 
